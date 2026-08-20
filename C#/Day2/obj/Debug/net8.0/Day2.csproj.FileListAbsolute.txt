@@ -1,0 +1,14 @@
+/mnt/windows/diff/projects/iti DotNet/C#/Day2/bin/Debug/net8.0/Day2
+/mnt/windows/diff/projects/iti DotNet/C#/Day2/bin/Debug/net8.0/Day2.deps.json
+/mnt/windows/diff/projects/iti DotNet/C#/Day2/bin/Debug/net8.0/Day2.runtimeconfig.json
+/mnt/windows/diff/projects/iti DotNet/C#/Day2/bin/Debug/net8.0/Day2.dll
+/mnt/windows/diff/projects/iti DotNet/C#/Day2/bin/Debug/net8.0/Day2.pdb
+/mnt/windows/diff/projects/iti DotNet/C#/Day2/obj/Debug/net8.0/Day2.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/windows/diff/projects/iti DotNet/C#/Day2/obj/Debug/net8.0/Day2.AssemblyInfoInputs.cache
+/mnt/windows/diff/projects/iti DotNet/C#/Day2/obj/Debug/net8.0/Day2.AssemblyInfo.cs
+/mnt/windows/diff/projects/iti DotNet/C#/Day2/obj/Debug/net8.0/Day2.csproj.CoreCompileInputs.cache
+/mnt/windows/diff/projects/iti DotNet/C#/Day2/obj/Debug/net8.0/Day2.dll
+/mnt/windows/diff/projects/iti DotNet/C#/Day2/obj/Debug/net8.0/refint/Day2.dll
+/mnt/windows/diff/projects/iti DotNet/C#/Day2/obj/Debug/net8.0/Day2.pdb
+/mnt/windows/diff/projects/iti DotNet/C#/Day2/obj/Debug/net8.0/Day2.genruntimeconfig.cache
+/mnt/windows/diff/projects/iti DotNet/C#/Day2/obj/Debug/net8.0/ref/Day2.dll

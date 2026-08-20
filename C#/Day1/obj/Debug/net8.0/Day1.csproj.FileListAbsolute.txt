@@ -1,0 +1,14 @@
+/mnt/windows/diff/projects/iti DotNet/C#/Day1/bin/Debug/net8.0/Day1
+/mnt/windows/diff/projects/iti DotNet/C#/Day1/bin/Debug/net8.0/Day1.deps.json
+/mnt/windows/diff/projects/iti DotNet/C#/Day1/bin/Debug/net8.0/Day1.runtimeconfig.json
+/mnt/windows/diff/projects/iti DotNet/C#/Day1/bin/Debug/net8.0/Day1.dll
+/mnt/windows/diff/projects/iti DotNet/C#/Day1/bin/Debug/net8.0/Day1.pdb
+/mnt/windows/diff/projects/iti DotNet/C#/Day1/obj/Debug/net8.0/Day1.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/windows/diff/projects/iti DotNet/C#/Day1/obj/Debug/net8.0/Day1.AssemblyInfoInputs.cache
+/mnt/windows/diff/projects/iti DotNet/C#/Day1/obj/Debug/net8.0/Day1.AssemblyInfo.cs
+/mnt/windows/diff/projects/iti DotNet/C#/Day1/obj/Debug/net8.0/Day1.csproj.CoreCompileInputs.cache
+/mnt/windows/diff/projects/iti DotNet/C#/Day1/obj/Debug/net8.0/Day1.dll
+/mnt/windows/diff/projects/iti DotNet/C#/Day1/obj/Debug/net8.0/refint/Day1.dll
+/mnt/windows/diff/projects/iti DotNet/C#/Day1/obj/Debug/net8.0/Day1.pdb
+/mnt/windows/diff/projects/iti DotNet/C#/Day1/obj/Debug/net8.0/Day1.genruntimeconfig.cache
+/mnt/windows/diff/projects/iti DotNet/C#/Day1/obj/Debug/net8.0/ref/Day1.dll
