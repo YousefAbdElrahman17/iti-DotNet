@@ -12,3 +12,4 @@
 /mnt/windows/diff/projects/iti DotNet/C#/Day2/obj/Debug/net8.0/Day2.pdb
 /mnt/windows/diff/projects/iti DotNet/C#/Day2/obj/Debug/net8.0/Day2.genruntimeconfig.cache
 /mnt/windows/diff/projects/iti DotNet/C#/Day2/obj/Debug/net8.0/ref/Day2.dll
+/mnt/windows/diff/projects/iti DotNet/C#/Day2/obj/Debug/net8.0/Day2.sourcelink.json

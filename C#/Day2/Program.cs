@@ -53,13 +53,12 @@ internal class Program
                         secondMin = min;
                         min = array2[a];
                     }                
-                if(array2[a] < secondMin && array2[a] != min)
+                else if(array2[a] < secondMin && array2[a] != min)
                     {
-                        secondMax = max;
-                        max = array2[a];
+                        secondMin = array2[a];
                     }
             }
-        Console.WriteLine($"-Secone Max: {secondMax}/n-Second Min: {secondMin}");
+        Console.WriteLine($"-Secone Max: {secondMax}\n-Second Min: {secondMin}");
         #endregion
 
 
