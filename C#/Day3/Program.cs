@@ -8,13 +8,13 @@ struct Rectangle
 
     public float Width
     {
-     get{return width;}
-     set{width=value;}   
+        get{return width;}
+        set{width=value;}   
     }
     public float Height
     {
-     get{return height;}
-     set{height=value;}
+        get{return height;}
+        set{height=value;}
     }
 
     public float GetArea()
