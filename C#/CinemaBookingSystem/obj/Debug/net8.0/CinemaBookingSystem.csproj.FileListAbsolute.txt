@@ -1,0 +1,15 @@
+/mnt/windows/diff/projects/iti DotNet/C#/CinemaBookingSystem/bin/Debug/net8.0/CinemaBookingSystem
+/mnt/windows/diff/projects/iti DotNet/C#/CinemaBookingSystem/bin/Debug/net8.0/CinemaBookingSystem.deps.json
+/mnt/windows/diff/projects/iti DotNet/C#/CinemaBookingSystem/bin/Debug/net8.0/CinemaBookingSystem.runtimeconfig.json
+/mnt/windows/diff/projects/iti DotNet/C#/CinemaBookingSystem/bin/Debug/net8.0/CinemaBookingSystem.dll
+/mnt/windows/diff/projects/iti DotNet/C#/CinemaBookingSystem/bin/Debug/net8.0/CinemaBookingSystem.pdb
+/mnt/windows/diff/projects/iti DotNet/C#/CinemaBookingSystem/obj/Debug/net8.0/CinemaBookingSystem.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/windows/diff/projects/iti DotNet/C#/CinemaBookingSystem/obj/Debug/net8.0/CinemaBookingSystem.AssemblyInfoInputs.cache
+/mnt/windows/diff/projects/iti DotNet/C#/CinemaBookingSystem/obj/Debug/net8.0/CinemaBookingSystem.AssemblyInfo.cs
+/mnt/windows/diff/projects/iti DotNet/C#/CinemaBookingSystem/obj/Debug/net8.0/CinemaBookingSystem.csproj.CoreCompileInputs.cache
+/mnt/windows/diff/projects/iti DotNet/C#/CinemaBookingSystem/obj/Debug/net8.0/CinemaBookingSystem.sourcelink.json
+/mnt/windows/diff/projects/iti DotNet/C#/CinemaBookingSystem/obj/Debug/net8.0/CinemaBookingSystem.dll
+/mnt/windows/diff/projects/iti DotNet/C#/CinemaBookingSystem/obj/Debug/net8.0/refint/CinemaBookingSystem.dll
+/mnt/windows/diff/projects/iti DotNet/C#/CinemaBookingSystem/obj/Debug/net8.0/CinemaBookingSystem.pdb
+/mnt/windows/diff/projects/iti DotNet/C#/CinemaBookingSystem/obj/Debug/net8.0/CinemaBookingSystem.genruntimeconfig.cache
+/mnt/windows/diff/projects/iti DotNet/C#/CinemaBookingSystem/obj/Debug/net8.0/ref/CinemaBookingSystem.dll
