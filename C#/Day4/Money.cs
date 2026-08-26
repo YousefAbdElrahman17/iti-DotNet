@@ -10,7 +10,7 @@ namespace Day4
         public Money(double Amount, string Currency)
         {
             this.Amount = Amount;
-            this.Amount = Amount;
+            this.Currency = Currency;
         }
         public override string ToString()
         {
@@ -30,18 +30,16 @@ namespace Day4
         }
         public static bool operator ==(Money m1, Money m2)
         {
-            if(ReferenceEquals(m1,m2)) return true;
             if(m1 is null || m2 is null) return false;
-            return m1.Amount == m2.Amount;
+            return ReferenceEquals(m1,m2);
         }
         public static bool operator !=(Money m1, Money m2)
         {
-            return m1 == m2;
+            return !(m1 == m2);
         }
         public override int GetHashCode()
         {
-            return Amount.GetHashCode();
+            return HashCode.Combine(Amount, Currency);
         }
     }
-
 }

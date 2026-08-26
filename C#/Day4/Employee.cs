@@ -31,7 +31,7 @@ namespace Day4
             this.EmployeeEmail  =  EmployeeEmail;
             EmployeeSalary      = 0;
         }
-        public Employee(int EmployeeID, string EmployeeName, string EmployeeEmail. float EmployeeSalary)
+        public Employee(int EmployeeID, string EmployeeName, string EmployeeEmail, float EmployeeSalary)
         {
             this.EmployeeID     = EmployeeID;
             this.EmployeeName   = EmployeeName;
@@ -40,7 +40,7 @@ namespace Day4
         }
         public override string ToString()
         {
-            return ($"ID: {EmployeeID}, Name: {EmployeeName}, Email: {EmployeeEmail}, Salary: {EmployeeSalary}");   
+            return $"ID: {EmployeeID}, Name: {EmployeeName}, Email: {EmployeeEmail}, Salary: {EmployeeSalary}";   
         }
     }
 }
