@@ -3,9 +3,9 @@
 using System;
 struct Customer
 {
-    int     customerId;
-    string  customerName;
-    int     customerAge;
+    int   customerId;
+    string customerName;
+    int   customerAge;
 
     public int CustomerId
     {
@@ -76,23 +76,23 @@ internal class Program
                     DisplayMovies(cinemaMovies);
                     break;
                 case 2:
-                    DisplaySeats(cinemaMovies);
+                    DisplaySeats(cinemaSeats);
                     break;
                 case 3:
-                    ReserveSeats(cinemaMovies);
+                    ReserveSeats(cinemaHalls, customer);
                     break;
                 case 4:
-                    DisplayAvailableSeats(cinemaMovies);
+                    DisplayAvailableSeats(cinemaHalls);
                     break;
                 case 5:
-                    DisplayCustomers(cinemaMovies);
+                    DisplayCustomers(customer);
                     break;
                 case 6:
-                    SearchCustomer(cinemaMovies);
+                    SearchCustomer(customer);
                     break;
                 case 7:
                     running = false;
-                    Console.WriteLine("Thanks for choosing us <3")
+                    Console.WriteLine("Thanks for choosing us <3");
                     break;  
                 default:
                 Console.WriteLine("Invalid option! choose again"); 
@@ -160,13 +160,12 @@ internal class Program
     static void DisplayAvailableSeats(char[][] halls)
     {
         Console.WriteLine("-------------- Available Seats Per Hall --------------");
-        for(int i=0; i<halls[i].Length; i++)
+        for(int i=0; i<halls.Length; i++)
             {
                 int available = 0;
                 for(int j=0; j<halls[i].Length; j++)
                 {
-                    if (halls[i][j] == 'o')
-                    available++;
+                    if (halls[i][j] == 'o') available++;
                 }
                 Console.WriteLine($"Hall({i+1}) -> {available} available seats");
             }
@@ -194,9 +193,9 @@ internal class Program
                     Console.WriteLine($"Customer ID: {customer[i].CustomerId}");
                     Console.WriteLine($"Customer Name: {customer[i].CustomerName}");
                     Console.WriteLine($"Customer Age: {customer[i].CustomerAge}");
-                }  
                     found = true;
                     break;
+                }  
             }    
         if(!found) Console.WriteLine("Customer not found!");
     }
