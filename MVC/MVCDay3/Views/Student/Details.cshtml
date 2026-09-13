@@ -1,0 +1,18 @@
+﻿@{
+    Layout = "_StudentDetailsLayout";
+    var std = ViewBag.Std as Student;
+}
+
+<h1>Details</h1>
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">Student details</h5>
+        <h2>@std.Id</h2>
+        <h2>@std.Name</h2>
+        <h2>@std.Age</h2>
+        <h2>@std.Address</h2>
+        <h2>@std.Department?.Name</h2>
+
+        <a href="/Student/GetAll" class="btn btn-primary">Back</a>
+    </div>
+</div>

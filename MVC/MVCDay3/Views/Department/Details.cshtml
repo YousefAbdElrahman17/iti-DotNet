@@ -1,0 +1,21 @@
+﻿@{
+    var dept = ViewData["Dept"] as Department;
+}
+<h1>Details</h1>
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">Department details</h5>
+        <h2>@dept.DeptId</h2>
+        <h2>@dept.Name</h2>
+
+        <h5>Students:</h5>
+        <ul>
+            @foreach (var s in dept.Students)
+            {
+                <li>@s.Name</li>
+            }
+        </ul>
+
+        <a href="/Department/GetAll" class="btn btn-primary">Back</a>
+    </div>
+</div>

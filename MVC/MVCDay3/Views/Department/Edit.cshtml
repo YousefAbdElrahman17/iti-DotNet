@@ -1,0 +1,15 @@
+﻿<h1>Edit</h1>
+@model Department
+<form method="post" action="/Department/Edit">
+  <div class="mb-3">
+
+    <input type="hidden" name="Id" value="@Model.DeptId">
+
+    <label for="dname" class="form-label">Department Name</label>
+    <input type="text" class="form-control" name="DeptName" value="@Model.Name" id="dname">
+
+    <input type="submit" value="Edit" class=" btn btn-primary"></input>
+    <a href="/Department/GetAll" class=" btn btn-primary">Cancel</a>
+
+  </div>
+</form>

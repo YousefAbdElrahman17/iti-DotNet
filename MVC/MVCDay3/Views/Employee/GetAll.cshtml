@@ -1,0 +1,41 @@
+
+
+
+<h1>GetAll</h1>
+
+@{
+    var empss = ViewBag.Emps as List<Employee>;
+
+}
+<a href="/Employee/Create/" class="btn btn-success">Create</a>
+
+<table class="table table-striped">
+    <tr>
+
+        <th>Employee Name</th>
+        <th>Employee Age</th>
+        <th>Employee Salary</th>
+        <th>Department ID</th>
+        @* <th>Department Name</th> *@
+    </tr>
+
+    @foreach (var emp in empss)
+    {
+        <tr>
+
+            <td>@emp.Name</td>
+            <td>@emp.Age</td>
+            <td>@emp.Salary</td>
+            <td>@emp.DeptId</td>
+            @* <td>@emp.Department.Name</td> *@
+            <td>
+                <a href="/Employee/Details/@emp.Id" class="btn btn-info">Details</a>
+                <a href="/Employee/Edit/@emp.Id" class="btn btn-warning">Edit</a>
+                <a href="/Employee/Delete/@emp.Id" class="btn btn-danger" onclick="return confirm('are you sure to delete Employee id @emp.Id')">Delete</a>
+            </td>
+            
+            
+        </tr>
+       
+    }
+</table> 
