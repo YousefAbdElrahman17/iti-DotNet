@@ -1,0 +1,19 @@
+﻿@using MVCDay4.ViewModels
+@{
+    Layout = "_StudentDetailsLayout";
+}
+@model StudentViewModel
+
+<h1>Details</h1>
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">Student details</h5>
+        <h2>@Model.Id</h2>
+        <h2>@Model.Name</h2>
+        <h2>@Model.Age</h2>
+        <h2>@Model.Address</h2>
+        <h2>@Model.Name</h2>
+
+        <a href="/Student/GetAll" class="btn btn-primary">Back</a>
+    </div>
+</div>

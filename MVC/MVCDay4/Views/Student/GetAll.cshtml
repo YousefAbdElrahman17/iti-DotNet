@@ -1,0 +1,31 @@
+@using MVCDay4.ViewModels
+@model GetAllStudentsViewModel
+
+<h1>GetAll</h1>
+
+<a href="/Student/Create/" class="btn btn-success">Create</a>
+
+<table class="table table-striped">
+    <tr>
+        <th>Student Name</th>
+        <th>Student Age</th>
+        <th>Address</th>
+        <th>Department Name</th>
+        <th></th>
+    </tr>
+
+    @foreach (var std in Model.Students)
+    {
+        <tr>
+            <td>@std.Name</td>
+            <td>@std.Age</td>
+            <td>@std.Address</td>
+            <td>@std.Department?.Name</td>
+            <td>
+                <a href="/Student/Details/@std.Id" class="btn btn-info">Details</a>
+                <a href="/Student/Edit/@std.Id" class="btn btn-warning">Edit</a>
+                <a href="/Student/Delete/@std.Id" class="btn btn-danger" onclick="return confirm('are you sure to delete student id @std.Id')">Delete</a>
+            </td>
+        </tr>
+    }
+</table>

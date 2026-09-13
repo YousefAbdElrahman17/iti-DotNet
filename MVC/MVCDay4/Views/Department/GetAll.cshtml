@@ -1,0 +1,25 @@
+@using MVCDay4.ViewModels
+@model GetAllDepartmentsViewModel
+
+<h1>GetAll</h1>
+
+<a href="/Department/Create/" class="btn btn-success">Create</a>
+
+<table class="table table-striped">
+    <tr>
+        <th>Department Name</th>
+        <th></th>
+    </tr>
+
+    @foreach (var dept in Model.Departments)
+    {
+        <tr>
+            <td>@dept.Name</td>
+            <td>
+                <a href="/Department/Details/@dept.DeptId" class="btn btn-info">Details</a>
+                <a href="/Department/Edit/@dept.DeptId" class="btn btn-warning">Edit</a>
+                <a href="/Department/Delete/@dept.DeptId" class="btn btn-danger" onclick="return confirm('are you sure to delete department id @dept.DeptId')">Delete</a>
+            </td>
+        </tr>
+    }
+</table>

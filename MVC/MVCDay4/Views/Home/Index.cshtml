@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">ازيك</h1>
+</div>
+
+<div class="row mt-4">
+
+    <div class="col-md-4 mb-3">
+        <div class="card text-center shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Students</h5>
+                <p class="card-text">Manage all student records - add, edit, view or delete.</p>
+                <a href="/Student/GetAll" class="btn btn-primary">Go to Students</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+        <div class="card text-center shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Departments</h5>
+                <p class="card-text">Manage all departments and see students within each one.</p>
+                <a href="/Department/GetAll" class="btn btn-success">Go to Departments</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+        <div class="card text-center shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Employees</h5>
+                <p class="card-text">Manage all employee records - add, edit, view or delete.</p>
+                <a href="/Employee/GetAll" class="btn btn-warning">Go to Employees</a>
+            </div>
+        </div>
+    </div>
+
+</div>

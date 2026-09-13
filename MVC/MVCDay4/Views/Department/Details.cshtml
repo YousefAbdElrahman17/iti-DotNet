@@ -1,0 +1,21 @@
+﻿@using MVCDay4.ViewModels
+@model DepartmentViewModel
+
+<h1>Details</h1>
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">Department details</h5>
+        <h2>@Model.DeptId</h2>
+        <h2>@Model.Name</h2>
+
+        <h5>Students:</h5>
+        <ul>
+            @foreach (var name in Model.StudentNames)
+            {
+                <li>@name</li>
+            }
+        </ul>
+
+        <a href="/Department/GetAll" class="btn btn-primary">Back</a>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+﻿@using MVCDay4.ViewModels
+@model AddStudentViewModel
+
+<h1>Edit</h1>
+<form method="post" action="/Student/Edit">
+  <div class="mb-3">
+
+    <input type="hidden" name="Id" value="@Model.Id">
+
+    <label for="Sname" class="form-label">Name</label>
+    <input type="text" class="form-control" name="Name" value="@Model.Name" id="Sname">
+
+    <label for="age" class="form-label">Age</label>
+    <input type="number" class="form-control" name="Age" value="@Model.Age" id="age">
+
+    <label for="addr" class="form-label">Address</label>
+    <input type="text" class="form-control" name="Address" value="@Model.Address" id="addr">
+
+    <label for="dept" class="form-label">Department</label>
+    <select class="form-control" name="DeptId" id="dept">
+    <option value="">--select Department--</option>
+        @foreach (var d in Model.Departments)
+        {
+            if (d.DeptId == Model.DeptId)
+            {
+                <option value="@d.DeptId" selected="selected">@d.Name</option>
+            }
+            else
+            {
+                <option value="@d.DeptId">@d.Name</option>
+            }
+        }
+    </select>
+
+    <input type="submit" value="Edit" class=" btn btn-primary"></input>
+    <a href="/Student/GetAll" class=" btn btn-primary">Cancel</a>
+
+  </div>
+</form>
