@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center py-5" style="background: linear-gradient(135deg, #1e3c72, #2a5298); border-radius: 12px; color: white; margin-bottom: 30px;">
+    <h1 class="display-4 fw-bold">اهلا</h1>
+    <p class="lead">خد لك لفة</p>
+</div>
+
+<div class="row">
+
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow border-0" style="border-radius: 15px;">
+            <div class="card-body text-center p-4">
+                <div class="mb-3" style="font-size: 3rem; color: #2a5298;">🎓</div>
+                <h5 class="card-title fw-bold">Students</h5>
+                <p class="card-text text-muted">Manage all student records - add, edit, view or delete.</p>
+                <a asp-controller="Student" asp-action="GetAll" class="btn btn-primary rounded-pill px-4">Go to Students</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow border-0" style="border-radius: 15px;">
+            <div class="card-body text-center p-4">
+                <div class="mb-3" style="font-size: 3rem; color: #2a9d8f;">🏢</div>
+                <h5 class="card-title fw-bold">Departments</h5>
+                <p class="card-text text-muted">Manage all departments and see students within each one.</p>
+                <a asp-controller="Department" asp-action="GetAll" class="btn btn-success rounded-pill px-4">Go to Departments</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow border-0" style="border-radius: 15px;">
+            <div class="card-body text-center p-4">
+                <div class="mb-3" style="font-size: 3rem; color: #e76f51;">👔</div>
+                <h5 class="card-title fw-bold">Employees</h5>
+                <p class="card-text text-muted">Manage all employee records - add, edit, view or delete.</p>
+                <a asp-controller="Employee" asp-action="GetAll" class="btn btn-warning rounded-pill px-4">Go to Employees</a>
+            </div>
+        </div>
+    </div>
+
+</div>

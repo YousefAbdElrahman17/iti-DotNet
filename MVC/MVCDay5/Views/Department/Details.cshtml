@@ -1,0 +1,34 @@
+﻿@using MVCDay5.ViewModels
+@model DepartmentViewModel
+
+<div class="d-flex justify-content-center mt-5">
+    <div class="card shadow-lg border-0" style="width: 24rem; border-radius: 18px; overflow: hidden;">
+        <div class="text-center text-white py-4" style="background: linear-gradient(135deg, #2a9d8f, #264653);">
+            <div style="font-size: 3rem;">🏢</div>
+            <h4 class="mt-2 mb-0">@Model.Name</h4>
+            <small>Department Profile</small>
+        </div>
+        <div class="card-body p-4">
+            <p class="fw-bold mb-1">Id: @Model.DeptId</p>
+
+            <p class="fw-bold mt-3 mb-1">Students:</p>
+            @if (Model.StudentNames.Any())
+            {
+                <ul class="list-group list-group-flush">
+                    @foreach (var name in Model.StudentNames)
+                    {
+                        <li class="list-group-item">@name</li>
+                    }
+                </ul>
+            }
+            else
+            {
+                <p class="text-muted">No students in this department yet.</p>
+            }
+
+            <div class="text-center mt-4">
+                <a asp-action="GetAll" asp-controller="Department" class="btn btn-success rounded-pill px-4">Back</a>
+            </div>
+        </div>
+    </div>
+</div>

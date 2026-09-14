@@ -1,0 +1,33 @@
+﻿@using MVCDay5.ViewModels
+@model AddStudentViewModel
+
+<h1>Create new student</h1>
+
+<form asp-action="Create" asp-controller="Student" method="post">
+  <div class="mb-3">
+    <label asp-for="Name" class="form-label">Name</label>
+    <input asp-for="Name" class="form-control">
+
+    <label asp-for="Age" class="form-label">Age</label>
+    <input asp-for="Age" class="form-control">
+
+    <label asp-for="Address" class="form-label">Address</label>
+    <input asp-for="Address" class="form-control">
+
+    <label asp-for="Email" class="form-label">Email</label>
+    <input asp-for="Email" class="form-control" type="email">
+
+    <label asp-for="Password" class="form-label">Password</label>
+    <input asp-for="Password" class="form-control" type="password">
+
+    <label asp-for="ConfirmPassword" class="form-label">Confirm Password</label>
+    <input asp-for="ConfirmPassword" class="form-control" type="password">
+
+    <label asp-for="DeptId" class="form-label">Department</label>
+    <select asp-for="DeptId" class="form-control" asp-items="@(new SelectList(Model.Departments, "DeptId", "Name"))">
+    </select>
+
+    <input type="submit" value="Add" class="btn btn-primary">
+    <a asp-action="GetAll" asp-controller="Student" class="btn btn-primary">Cancel</a>
+    </div>
+</form>
