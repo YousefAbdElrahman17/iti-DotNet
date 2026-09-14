@@ -7,6 +7,7 @@
 
 <table class="table table-striped">
     <tr>
+        <th>Student ID</th>
         <th>Student Name</th>
         <th>Student Age</th>
         <th>Address</th>
@@ -17,6 +18,7 @@
     @foreach (var std in Model.Students)
     {
         <tr>
+            <td>@std.Id</td>
             <td>@std.Name</td>
             <td>@std.Age</td>
             <td>@std.Address</td>

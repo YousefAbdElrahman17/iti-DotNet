@@ -8,7 +8,8 @@ namespace MVCDay4.Models
         public string Name { get; set; }
         public int Age { get; set; }
         public string Address { get; set; }
-        [ForeignKey("Department")]
+        
+        [ForeignKey("DeptId")]
         public int DeptId { get; set; }
         public virtual Department Department { get; set; }
     }

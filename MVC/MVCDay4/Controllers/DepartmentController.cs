@@ -60,7 +60,7 @@ namespace MVCDay4.Controllers
         {
             var dept = db.Departments.SingleOrDefault(d => d.DeptId == id);
 
-            var vm = new AddDepartmentViewModel
+            var vm = new EditDepartmentViewModel
             {
                 DeptId = dept.DeptId,
                 Name = dept.Name
@@ -70,7 +70,7 @@ namespace MVCDay4.Controllers
         }
 
         [HttpPost]
-        public IActionResult Edit(AddDepartmentViewModel vm)
+        public IActionResult Edit(EditDepartmentViewModel vm)
         {
             var dept = new Department
             {

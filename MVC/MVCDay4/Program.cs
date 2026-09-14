@@ -17,23 +17,17 @@ namespace MVCDay4
 
             var app = builder.Build();
 
-            //Middleware
-
             // app.Use(async (HttpContext, next) =>
             // {
-            //     //before
             //     await HttpContext.Response.WriteAsync("1) hello from Middleware 1\n");
             //     await next();
-            //     //after
             //     await HttpContext.Response.WriteAsync("5) hello from Middleware 5");
             // });
 
             // app.Use(async (HttpContext, next) =>
             // {
-            //     //before
             //     await HttpContext.Response.WriteAsync("2) hello from Middleware 2\n");
             //     await next();
-            //     //after
             //     await HttpContext.Response.WriteAsync("4) hello from Middleware 4\n");
             // });
 
@@ -41,6 +35,29 @@ namespace MVCDay4
             // {
             //     await HttpContext.Response.WriteAsync("3) hello from Middleware 3\n");
             // });
+
+            //Run both
+            app.Map("/middleware-test", middlewareApp =>
+            {
+                middlewareApp.Use(async (HttpContext, next) =>
+                {
+                    await HttpContext.Response.WriteAsync("1) hello from Middleware 1\n");
+                    await next();
+                    await HttpContext.Response.WriteAsync("5) hello from Middleware 5");
+                });
+
+                middlewareApp.Use(async (HttpContext, next) =>
+                {
+                    await HttpContext.Response.WriteAsync("2) hello from Middleware 2\n");
+                    await next();
+                    await HttpContext.Response.WriteAsync("4) hello from Middleware 4\n");
+                });
+
+                middlewareApp.Run(async (HttpContext) =>
+                {
+                    await HttpContext.Response.WriteAsync("3) hello from Middleware 3\n");
+                });
+            });
 
 
             // Configure the HTTP request pipeline.

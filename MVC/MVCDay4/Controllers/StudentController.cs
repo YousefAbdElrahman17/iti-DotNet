@@ -66,7 +66,7 @@ namespace MVCDay4.Controllers
         {
             var std = db.Students.SingleOrDefault(s => s.Id == id);
 
-            var vm = new AddStudentViewModel
+            var vm = new EditStudentViewModel
             {
                 Id = std.Id,
                 Name = std.Name,
@@ -80,7 +80,7 @@ namespace MVCDay4.Controllers
         }
 
         [HttpPost]
-        public IActionResult Edit(AddStudentViewModel vm)
+        public IActionResult Edit(EditStudentViewModel vm)
         {
             var std = new Student
             {
