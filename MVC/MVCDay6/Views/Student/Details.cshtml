@@ -1,0 +1,37 @@
+﻿@using MVCDay6.ViewModels
+@{
+    Layout = "_StudentDetailsLayout";
+}
+@model StudentViewModel
+
+<div class="d-flex justify-content-center mt-5">
+    <div class="card shadow-lg border-0" style="width: 24rem; border-radius: 18px; overflow: hidden;">
+        <div class="text-center text-white py-4" style="background: linear-gradient(135deg, #1e3c72, #2a5298);">
+            <div style="font-size: 3rem;">🎓</div>
+            <h4 class="mt-2 mb-0">@Model.Name</h4>
+            <small>Student Profile</small>
+        </div>
+        <div class="card-body p-4">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between">
+                    <span class="fw-bold">Id</span> <span>@Model.Id</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <span class="fw-bold">Age</span> <span>@Model.Age</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <span class="fw-bold">Address</span> <span>@Model.Address</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <span class="fw-bold">Email</span> <span>@Model.Email</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <span class="fw-bold">Department</span> <span>@Model.DepartmentName</span>
+                </li>
+            </ul>
+            <div class="text-center mt-4">
+                <a asp-action="GetAll" asp-controller="Student" class="btn btn-primary rounded-pill px-4">Back</a>
+            </div>
+        </div>
+    </div>
+</div>

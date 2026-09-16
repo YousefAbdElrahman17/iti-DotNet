@@ -1,0 +1,45 @@
+@using MVCDay6.ViewModels
+@model GetAllStudentsViewModel
+
+<h1>GetAll</h1>
+@if (!string.IsNullOrEmpty(ViewBag.LastViewedStudentName))
+{
+    <div class="alert alert-info">
+        Last student you viewed: <strong>@ViewBag.LastViewedStudentName</strong>
+    </div>
+}
+<p class="text-muted">You've visited this page <strong>@ViewBag.VisitCount</strong> time(s).</p>
+
+<a asp-action="Create" asp-controller="Student" class="btn btn-success">Create</a>
+
+<table class="table table-striped">
+    <tr>
+        <th>Id</th>
+        <th>Student Name</th>
+        <th>Student Age</th>
+        <th>Address</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Department Name</th>
+        <th></th>
+    </tr>
+
+    @foreach (var std in Model.Students)
+    {
+        <tr>
+            <td>@std.Id</td>
+            <td>@std.Name</td>
+            <td>@std.Age</td>
+            <td>@std.Address</td>
+            <td>@std.Email</td>
+            <td>@std.Password</td>
+            <td>@std.Department?.Name</td>
+            <td>
+                <a asp-action="Details" asp-route-id ="@std.Id" class="btn btn-info">Details</a>
+                <a asp-action="Edit" asp-route-id ="@std.Id" class="btn btn-warning">Edit</a>
+                <a asp-action="Delete" asp-route-id ="@std.Id" class="btn btn-danger" onclick="return confirm('are you sure to delete student id @std.Id')">Delete</a>
+            </td>
+        </tr>
+    }
+</table>
+<p class="text-muted">You've visited this page <strong>@ViewBag.VisitCount</strong> time(s).</p>
